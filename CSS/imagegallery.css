@@ -116,10 +116,12 @@ button {
   }
 .content h2 {
     font-size: 16.75px;
+    text-transform: capitalize;
+    margin-bottom:0.25em ;
     }
 
 .content p {
-    line-height: 1.5;
+    line-height: 1.25;
     font-size: 12px;
     }
 

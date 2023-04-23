@@ -120,9 +120,16 @@ window.onload = function() {
     contentDiv.appendChild(dynamicLink);
     
 
+
+    var yearOfProj = document.createElement("p");
+    yearOfProj.innerHTML = xmlDoc.getElementsByTagName("year_of_project")[i].childNodes[0].nodeValue;
     var desc = document.createElement("p");
-    desc.innerHTML = xmlDoc.getElementsByTagName("city_of_contribution")[i].childNodes[0].nodeValue+xmlDoc.getElementsByTagName("country_of_contribution")[i].childNodes[0].nodeValue;
+    desc.innerHTML = 
+    xmlDoc.getElementsByTagName("city_of_contribution")[i].childNodes[0].nodeValue+", "+
+    xmlDoc.getElementsByTagName("country_of_contribution")[i].childNodes[0].nodeValue;
+    
     contentDiv.append(desc);
+    contentDiv.append(yearOfProj);
     
     
     imgText.appendChild(contentDiv);
