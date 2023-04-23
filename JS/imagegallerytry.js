@@ -47,7 +47,7 @@ gsap.from(".main-heading", {
   duration: 1,
 });
 // ==== HERO IMAGE  ==== //
-gsap.from(".hero-image", {
+gsap.from(".main-content .box img", {
   opacity: 0,
   y: 20,
   delay: 2.6,
@@ -121,7 +121,7 @@ window.onload = function() {
     
 
     var desc = document.createElement("p");
-    desc.innerHTML = xmlDoc.getElementsByTagName("country_of_contribution")[i].childNodes[0].nodeValue;
+    desc.innerHTML = xmlDoc.getElementsByTagName("city_of_contribution")[i].childNodes[0].nodeValue+xmlDoc.getElementsByTagName("country_of_contribution")[i].childNodes[0].nodeValue;
     contentDiv.append(desc);
     
     
