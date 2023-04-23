@@ -162,6 +162,13 @@ button {
   .close_btn:hover {
     color: #000;
   }
-
+  #map {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: 2.5em;
+    z-index: 0;
+  }
+    
 }
 
