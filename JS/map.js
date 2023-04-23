@@ -95,27 +95,20 @@ for (let i = 0; i < x.length; i++) {
 }
 
 // ==== MAP JS POP UP ==== //
-var map = L.map('map').setView([27.2,83.95], 10);
+var map = L.map('map').setView([27.2,83.95], 2.5);
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 10,
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 }).addTo(map);
 
-var picIcon = L.icon({
-  iconUrl:"img/port-1.jpg",
-  iconSize: [120,80],
-})
-var marker = L.marker([27.2,83.95],{icon: picIcon})
-.addTo(map)
-.bindPopup("<h2>Project</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis accumsan ante, quis ullamcorper neque interdum eu. Integer gravida dui et ipsum vestibulum sollicitudin. Pellentesque ultrices sapien ut massa consequat, vitae finibus urna ullamcorper. Sed a arcu nisl.</p><img src='img/port-1.jpg' width='300' height='auto'/>", {maxWidth:"300"})
 
 function clickZoom(marker) {
-  map.setView(marker.target.getLatLng(),10);
+  map.setView(marker.target.getLatLng(),5);
 }
 
 function closeZoom(marker){
-  map.setView(marker.target.getLatLng(),7.5);
+  map.setView(marker.target.getLatLng(),2.5);
 }
 
 function addMarker(map,lat,long,projectName,projectDesc,projectPhoto,projectLink) {

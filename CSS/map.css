@@ -1,11 +1,12 @@
 /* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 /* ==== ROOT RESET ==== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Archivo', sans-serif;
 }
 *,
 *::before,
@@ -15,9 +16,9 @@
 
 /* ==== CSS VARIABLES ==== */
 :root {
-  --primary-color: #335eea;
-  --link-color: #506690;
-  --btn-hover-color: #2b50c7;
+  --primary-color: #97a999;
+  --link-color: #97a999;
+  --btn-hover-color: #97a999;
   --lg-heading: #161c2d;
   --text-content: #869ab8;
   --fixed-header-height: 4.5rem;
@@ -106,7 +107,7 @@ button {
 }
 
 #map {
-    height: 80%;
+    height: 100%;
     width: 100%;
     margin: auto;
     margin-top: 2.5em;
