@@ -104,6 +104,7 @@ window.onload = function() {
 
     var img = document.createElement("img");
     img.src = "../img/" + projectIDs[i] +"/0.jpg";
+    img.setAttribute('loading','lazy');
     newDiv.appendChild(img);
 
     var imgText = document.createElement("div");
