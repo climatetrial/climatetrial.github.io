@@ -189,7 +189,7 @@ button {
     width: 100%;
     margin: auto;
     margin-top: 2.5em;
-    z-index: -20;
+    z-index: 0;
   }
     
 }

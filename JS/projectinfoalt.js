@@ -106,6 +106,7 @@ for (let i = 0; i < noImages; i++){
   const image = document.createElement('img');
   var projectPhoto = "../img/" + projectIDs[projNo] + "/" + i + ".jpg";
   image.setAttribute('src',projectPhoto);
+  image.style.width = '100%';
   var ul = document.getElementsByClassName("slider-container")[0];
   var li = document.createElement('li');
   li.appendChild(image)
