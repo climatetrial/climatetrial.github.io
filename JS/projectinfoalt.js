@@ -81,7 +81,7 @@ if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
   else {// code for IE6, IE5
   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
   }
-  xmlhttp.open("GET", "projectdata.xml", false);
+  xmlhttp.open("GET", "newdata.xml", false);
   xmlhttp.send();
   xmlDoc = xmlhttp.responseXML;
 
@@ -93,12 +93,25 @@ for (let i = 0; i < x.length; i++) {
   projectIDs.push(projectID)
 }
 
+
 const urlParams = new URLSearchParams(window.location.search);
 const greetingValue = urlParams.get('greeting');
 
-var projNo = (projectIDs.indexOf(greetingValue) );
+var projNo = (projectIDs.indexOf(greetingValue));
 
 
+var noImages = xmlDoc.getElementsByTagName("no_of_images")[projNo].childNodes[0].nodeValue;
+
+for (let i = 0; i < noImages; i++){
+  const image = document.createElement('img');
+  var projectPhoto = "../img/" + projectIDs[projNo] + "/" + i + ".jpg";
+  image.setAttribute('src',projectPhoto);
+  image.style.height = "1080px"
+  var ul = document.getElementsByClassName("slider-container")[0];
+  var li = document.createElement('li');
+  li.appendChild(image)
+  ul.appendChild(li)
+}
 document.getElementsByClassName("attr-value")[0].textContent =
 xmlDoc.getElementsByTagName("title_of_project")[projNo].childNodes[0].nodeValue;
 

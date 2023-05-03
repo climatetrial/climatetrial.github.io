@@ -95,13 +95,18 @@ for (let i = 0; i < x.length; i++) {
 }
 
 // ==== MAP JS POP UP ==== //
-var map = L.map('map').setView([27.2,83.95], 2.5);
+var map = L.map('map').setView([27.2,83.95], 10);
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 10,
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 }).addTo(map);
 
+var myIcon = L.divIcon({
+  className: 'my-div-icon',
+  html:"<p>Coppacabasdfsdfna</p>",
+});
+L.marker([27.2,83.95], {icon: myIcon}).addTo(map);
 
 function clickZoom(marker) {
   map.setView(marker.target.getLatLng(),5);

@@ -106,7 +106,6 @@ button {
 }
 
 
-
     /* ====  PROJECT DESCRIPTION ==== */  
 .flex-row-container {
   width: 80%;
@@ -140,6 +139,7 @@ button {
 .attr-value{
   font-size: 14px;
   padding-bottom: 10px;
+  text-transform: capitalize;
 }
 
 #map {

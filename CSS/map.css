@@ -106,13 +106,35 @@ button {
   right: 3% !important;
 }
 
+/* ====  MAP COMPONENTS  ==== */
+
 #map {
     height: 100%;
     width: 100%;
     margin: auto;
     margin-top: 2.5em;
 }
-    
+
+.my-div-icon p{
+  background-color: white;
+  font-size: 15px;
+  clip-path: polygon(0% 0%, 100% 1em, 100% 100%, 0% 100%);
+  white-space: nowrap;
+  height: fit-content;
+  width: fit-content;
+  padding-top:2em;
+  padding-bottom:0.5em;
+  text-align: center;
+  text-transform: capitalize;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  translate: -100% -100%;
+  
+}
+.my-div-icon p:hover{
+  background-color: black;
+  color:white;
+}
 /* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
 @media screen and (min-width: 768px) {
   .toggle_btn {

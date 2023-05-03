@@ -138,15 +138,15 @@ button {
   width: 100%;
   padding-left: 1.7rem;
   padding-right: 1.7rem;
-  padding-top: 5rem;
-  margin-bottom: 5rem;
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .wrapper-icons {
   width: 100%;
   padding-left: 1.7rem;
   padding-right: 1.7rem;
-  padding-top: 2rem;
-  margin-bottom: 5rem;
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .grid-cols-2 {
@@ -157,11 +157,11 @@ button {
   gap: 4rem;
 }
 .grid-item-1 {
-  padding-top: 5rem;
+  padding-top: 2.5rem;
   padding-left: 1.5rem;
 }
 .grid-item-1-right {
-  padding-top: 5rem;
+  padding-top: 2.5rem;
   padding-right: 1.5rem;
 }
 .main-heading {
@@ -173,11 +173,19 @@ button {
   color: var(--primary-color);
 }
 .info-text {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   font-size: 19px;
   line-height: 28px;
   color: #334157;
 }
+
+.info-text-only {
+  padding-top:2.5em;
+  font-size: 19px;
+  line-height: 28px;
+  color: #334157;
+}
+
 .btn_wrapper {
   margin-top: 3.5rem;
   display: flex;
@@ -398,6 +406,13 @@ button {
     text-align: center;
     padding: 0.7rem;
   }
+
+  .info-text-only {
+    font-size: 16px;
+    text-align: center;
+    padding: 0.7rem;
+  }
+
   .btn_wrapper {
     width: 100%;
     display: flex;
