@@ -95,7 +95,7 @@ for (let i = 0; i < x.length; i++) {
 }
 
 // ==== MAP JS POP UP ==== //
-var map = L.map('map').setView([27.2,83.95], 10);
+var map = L.map('map').setView([27.2,83.95],1);
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 10,
