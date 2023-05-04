@@ -109,7 +109,7 @@ button {
 /* ====  MAP COMPONENTS  ==== */
 
 #map {
-    height: 100%;
+    height: 92.5%;
     width: 100%;
     margin: auto;
     margin-top: 2.5em;
@@ -185,12 +185,27 @@ button {
     color: #000;
   }
   #map {
-    height: 100%;
+    height: 92.5%;
     width: 100%;
     margin: auto;
-    margin-top: 2.5em;
+    margin-top: 1.25em;
     z-index: 0;
   }
+  .my-div-icon p{
+    background-color: white;
+    font-size: 10px;
+    clip-path: polygon(0% 0%, 100% 1em, 100% 100%, 0% 100%);
+    white-space: nowrap;
+    height: fit-content;
+    width: fit-content;
+    padding-top:2em;
+    padding-bottom:0.5em;
+    text-align: center;
+    text-transform: capitalize;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    translate: -100% -100%;
     
+  }
 }
 

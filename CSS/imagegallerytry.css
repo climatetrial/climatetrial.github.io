@@ -119,7 +119,7 @@ button {
 }
 .flex-row-2{
   flex: 1;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   text-justify:inter-word;
   text-align: justify;
@@ -133,7 +133,7 @@ button {
   font-size: 12px;
   text-transform:uppercase;
   color:grey;
-  
+  padding-bottom: 2.5px;
 }
 
 .attr-value{
@@ -209,7 +209,7 @@ button {
     flex-basis: 100%;
   }
   .flex-row-2{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
     text-align: justify;
   }

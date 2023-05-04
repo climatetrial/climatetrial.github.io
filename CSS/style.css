@@ -368,15 +368,17 @@ button {
     line-height: 23px;
     font-size: 14px;
   }
+  /* ==== HERO IMAGE ==== */
   .hero-image {
     display: flex;
-    background-image:url(img/hero.PNG);
+    margin-top: 2.5em;
+    background-image:url(../img/hero.PNG);
     height:50vh;
     background-position: center;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: contain;
+  
     position:relative;
   }
 }
