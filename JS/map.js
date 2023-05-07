@@ -130,6 +130,6 @@ for (let i = 0; i < x.length; i++){
   var projectName  = xmlDoc.getElementsByTagName("title_of_project")[i].childNodes[0].nodeValue;
   var projectDesc  = xmlDoc.getElementsByTagName("synopsis_of_project")[i].childNodes[0].nodeValue;
   var projectPhoto = "../img/" + projectIDs[i] + "/0.jpg"
-  var projectLink = "projectinfoalt.html?greeting="+projectIDs[i]
+  var projectLink = "projectinfo.html?project="+projectIDs[i]
   addMarker(map,lat,long,projectName,projectDesc,projectPhoto,projectLink)
 }

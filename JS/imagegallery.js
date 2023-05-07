@@ -1,4 +1,4 @@
-const 
+const
   navId = document.getElementById("nav_menu"),
   ToggleBtnId = document.getElementById("toggle_btn"),
   CloseBtnId = document.getElementById("close_btn");
@@ -47,7 +47,7 @@ gsap.from(".main-heading", {
   duration: 1,
 });
 // ==== HERO IMAGE  ==== //
-gsap.from(".hero-image", {
+gsap.from(".main-content .box img", {
   opacity: 0,
   y: 20,
   delay: 2.6,
@@ -75,7 +75,6 @@ gsap.from(".team_img_wrapper img", {
   duration: 1,
 });
 
-// ==== MAP JS POP UP ==== //
 if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
   xmlhttp = new XMLHttpRequest();
   }
@@ -94,40 +93,50 @@ for (let i = 0; i < x.length; i++) {
   projectIDs.push(projectID)
 }
 
-// ==== MAP JS POP UP ==== //
-var map = L.map('map').setView([27.2,83.95], 4);
+window.onload = function() {
+  console.time();
+  var noImages = projectIDs.length;
+  for (let i = 0; i < noImages; i++) {
+    var imageContainer = document.getElementsByClassName("main-content")[0];
 
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 10,
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-}).addTo(map);
+    var newDiv = document.createElement("div");
+    newDiv.className = "box";
 
-function clickZoom(marker) {
-  map.setView(marker.target.getLatLng(),5);
-}
+    var img = document.createElement("img");
+    img.src = "../img/" + projectIDs[i] +"/0.jpg";
+    img.setAttribute('loading','lazy');
+    newDiv.appendChild(img);
 
-function closeZoom(marker){
-  map.setView(marker.target.getLatLng(),2.5);
-}
+    var imgText = document.createElement("div");
+    imgText.className = "img-text";
 
-function addMarker(map,lat,long,projectName,projectDesc,projectPhoto,projectLink) {
-    var myIcon = L.divIcon({
-        className: 'my-div-icon',
-        html: "<p>" + projectName + "<p>",
-    })
-    var marker = L.marker([lat,long],{icon: myIcon})
-    .addTo(map)
-    .bindPopup('<a href ='+projectLink+'><h2>'+projectName+"</h2></a><p>"+projectDesc+"</p><img src="+projectPhoto+" width='300' height='auto'/>", {maxWidth:"300"})
-    .on('click',clickZoom)
-    .getPopup().on('remove',closeZoom)
-}
+    var contentDiv = document.createElement("div");
+    contentDiv.className = "content";
+    
+    var dynamicLink = document.createElement("a");
+    dynamicLink.setAttribute("href","projectinfo.html?project="+projectIDs[i]);
+    var header = document.createElement("h2");
+    header.innerHTML = xmlDoc.getElementsByTagName("title_of_project")[i].childNodes[0].nodeValue;
+    dynamicLink.appendChild(header)
+    contentDiv.appendChild(dynamicLink);
+    
 
-for (let i = 0; i < x.length; i++){
-  var lat = xmlDoc.getElementsByTagName("lat")[i].childNodes[0].nodeValue;
-  var long = xmlDoc.getElementsByTagName("long")[i].childNodes[0].nodeValue;
-  var projectName  = xmlDoc.getElementsByTagName("title_of_project")[i].childNodes[0].nodeValue;
-  var projectDesc  = xmlDoc.getElementsByTagName("synopsis_of_project")[i].childNodes[0].nodeValue;
-  var projectPhoto = "../img/" + projectIDs[i] + "/0.jpg"
-  var projectLink = "projectinfo.html?project="+projectIDs[i]
-  addMarker(map,lat,long,projectName,projectDesc,projectPhoto,projectLink)
+
+    var yearOfProj = document.createElement("p");
+    yearOfProj.innerHTML = xmlDoc.getElementsByTagName("year_of_project")[i].childNodes[0].nodeValue;
+    var desc = document.createElement("p");
+    desc.innerHTML = 
+    xmlDoc.getElementsByTagName("city_of_contribution")[i].childNodes[0].nodeValue+", "+
+    xmlDoc.getElementsByTagName("country_of_contribution")[i].childNodes[0].nodeValue;
+    
+    contentDiv.append(desc);
+    contentDiv.append(yearOfProj);
+    
+    
+    imgText.appendChild(contentDiv);
+    newDiv.appendChild(imgText);
+
+    imageContainer.appendChild(newDiv)
+  }
+  console.timeEnd();
 }
