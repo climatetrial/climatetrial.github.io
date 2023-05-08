@@ -125,7 +125,10 @@ function addMarker(map,lat,long,projectName,projectDesc,projectPhoto,projectLink
 for (let i = 0; i < x.length; i++){
   var lat = xmlDoc.getElementsByTagName("lat")[i].childNodes[0].nodeValue;
   var long = xmlDoc.getElementsByTagName("long")[i].childNodes[0].nodeValue;
-  var projectName  = xmlDoc.getElementsByTagName("title_of_project")[i].childNodes[0].nodeValue;
+  var projectNameOld  = xmlDoc.getElementsByTagName("title_of_project")[i].childNodes[0].nodeValue;
+  var maxLength = 50;
+  var projectName = projectNameOld.substr(0,maxLength);
+  projectName = projectName.substr(0,Math.min(projectName.length, projectName.lastIndexOf("")));
   var projectDesc  = xmlDoc.getElementsByTagName("synopsis_of_project")[i].childNodes[0].nodeValue;
   var projectPhoto = "../img/" + projectIDs[i] + "/0.jpg"
   var projectLink = "projectinfo.html?project="+projectIDs[i]

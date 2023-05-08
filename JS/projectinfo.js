@@ -154,10 +154,10 @@ function closeZoom(marker){
   map.setView(marker.target.getLatLng(),7.5);
 }
 
-function addMarker(map,lat,long,projectName,projectDesc,projectPhoto,projectLink) {
+function addMarker(map,lat,long,projectName,projectDesc,projectLink) {
     var marker = L.marker([lat,long])
     .addTo(map)
-    .bindPopup('<a href ='+projectLink+'><h2>'+projectName+"</h2></a><p>"+projectDesc+"</p><img src="+projectPhoto+" width='300' height='auto'/>", {maxWidth:"300"})
+    .bindPopup('<a href ='+projectLink+'><h2>'+projectName+"</h2></a><p>"+projectDesc, {maxWidth:"300"})
     .on('click',clickZoom)
     .getPopup().on('remove',closeZoom)
 }
@@ -167,7 +167,6 @@ for (let i = 0; i < x.length; i++){
   var long = xmlDoc.getElementsByTagName("long")[i].childNodes[0].nodeValue;
   var projectName  = xmlDoc.getElementsByTagName("title_of_project")[i].childNodes[0].nodeValue;
   var projectDesc  = xmlDoc.getElementsByTagName("synopsis_of_project")[i].childNodes[0].nodeValue;
-  var projectPhoto = "../img/" + projectIDs[i] + "/0.jpg"
   var projectLink = "projectinfo.html?project="+projectIDs[i]
-  addMarker(map,lat,long,projectName,projectDesc,projectPhoto,projectLink)
+  addMarker(map,lat,long,projectName,projectDesc,projectLink)
 }

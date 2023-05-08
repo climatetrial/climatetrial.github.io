@@ -1,0 +1,258 @@
+/* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+/* ==== ROOT RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Archivo', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ==== CSS VARIABLES ==== */
+:root {
+  --primary-color: #97a999;
+  --link-color: #97a999;
+  --btn-hover-color: #2b50c7;
+  --lg-heading: #161c2d;
+  --text-content: #869ab8;
+  --fixed-header-height: 4.5rem;
+}
+
+/* ==== RESET HTML ==== */
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #fafbfb;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+  
+/* ==== CONTAINER ==== */
+.container {
+  width: 100%;
+
+}
+@media screen and (min-width: 1040px) {
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+}
+/* ==== HEADER ==== */
+.header {
+  height: var(--fixed-header-height);
+  padding: 0 1.7rem;
+}
+
+/* ==== NAV ==== */
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ==== LOGO ==== */
+.logo h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+}
+/* ====  NAV-MENU  ==== */
+.nav_menu_list {
+  display: flex;
+  align-items: center;
+}
+.nav_menu_list .nav_menu_item {
+  margin: 0 2rem;
+}
+.nav_menu_item .nav_menu_link {
+  font-size: 16.5px;
+  line-height: 27px;
+  color: var(--link-color);
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+.nav_menu_link:hover {
+  color: var(--primary-color);
+}
+.toggle_btn {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--lg-heading);
+  z-index: 4;
+}
+.nav_menu,
+.close_btn {
+  display: none;
+}
+.show {
+  right: 3% !important;
+}
+.page-container {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  
+.module {
+    padding: 0 10px;
+  }
+.module h2 {
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #323232;
+    margin-bottom: 10px;
+  }
+.module .subtitle {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+.events-list {
+    list-style: none;
+    margin: 60px 0 0 0;
+    padding: 0;
+  }
+.events-list li {
+    margin-bottom: 50px;
+  }
+  
+  .event-header {
+    display: flex;
+  }
+  
+  .event-details {
+    padding-left: 14px;
+  }
+  
+  .event-title {
+    line-height: 1.5;
+  }
+  .event-title a {
+    transition: all 0.5s ease;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 4px;
+    line-height: 1;
+    text-decoration: none;
+  }
+.event-title a:hover {
+    color:var(--primary-color);
+  }
+  
+.event-date {
+    color: #323232;
+    font-size: 18px;
+  }
+  
+.event-icon {
+    flex: 0 0 80px;
+  }
+.event-icon img{
+    max-width: 100%;
+    width: auto;
+  }
+.event-content {
+    padding-top: 15px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+@media screen and (min-width: 1040px) {
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+}
+
+
+
+/* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
+@media screen and (min-width: 768px) {
+  .toggle_btn {
+    display: none;
+  }
+  .nav_menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo h2 {
+    font-size: 23px;
+  }
+  .nav_menu {
+    position: fixed;
+    width: 93%;
+    height: 100%;
+    display: block;
+    top: 2.5%;
+    right: -100%;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    z-index: 50;
+    transition: 0.4s;
+  }
+  .nav_menu_list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+  }
+  .nav_menu_list .nav_menu_item {
+    margin: 1rem 0;
+  }
+  .nav_menu_item .nav_menu_link {
+    font-size: 18px;
+  }
+  .close_btn {
+    display: block;
+    position: absolute;
+    right: 10%;
+    font-size: 25px;
+    color: #50689e;
+  }
+  .close_btn:hover {
+    color: #000;
+  }
+  .wrapper {
+    padding: 0 0.7rem;
+  }
+
+
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper {
+    padding-top: 2rem;
+  }
+}
