@@ -46,6 +46,15 @@ gsap.from(".main-heading", {
   delay: 2.4,
   duration: 1,
 });
+
+// ==== MAIN CONTENT ==== //
+gsap.from(".main-content", {
+  opacity: 0,
+  y: 20,
+  delay: 2.4,
+  duration: 1,
+});
+
 // ==== HERO IMAGE  ==== //
 gsap.from(".hero-image", {
   opacity: 0,

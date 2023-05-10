@@ -22,7 +22,7 @@
   --btn-hover-color: #2b50c7;
   --lg-heading: #161c2d;
   --text-content: #869ab8;
-  --fixed-header-height: 4.5rem;
+  --fixed-header-height: 4.75rem;
 }
 
 /* ==== RESET HTML ==== */
@@ -51,7 +51,6 @@ button {
 /* ==== CONTAINER ==== */
 .container {
   width: 100%;
-
 }
 @media screen and (min-width: 1040px) {
   .container {
@@ -84,10 +83,10 @@ button {
   align-items: center;
 }
 .nav_menu_list .nav_menu_item {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
 }
 .nav_menu_item .nav_menu_link {
-  font-size: 16.5px;
+  font-size: 16px;
   line-height: 27px;
   color: var(--link-color);
   text-transform: capitalize;
@@ -113,14 +112,14 @@ button {
 /* ==== HERO IMAGE ==== */
 .hero-image {
     display: flex;
-    margin-top: 2.5em;
-    background-image:url(../img/hero.PNG);
-    height:50vh;
+    margin-top: 1em;
+    background-image:url(../img/Figure1.jpg);
+    height:65vh;
     background-position: center;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:contain;
     position:relative;
   }
   /* ==== CONTAINER ==== */
@@ -162,7 +161,6 @@ button {
   padding-left: 1.5rem;
 }
 .grid-item-1-right {
-  padding-top: 2.5rem;
   padding-right: 1.5rem;
 }
 .main-heading {
@@ -373,7 +371,7 @@ button {
   .hero-image {
     display: flex;
     margin-top: 2.5em;
-    background-image:url(../img/hero.PNG);
+    background-image:url(../img/Figure1.jpg);
     height:50vh;
     background-position: center;
     align-items: center;
@@ -436,4 +434,17 @@ button {
   .featured_info span {
     font-size: 19px;
   }
+    /* ==== HERO IMAGE ==== */
+    .hero-image {
+      display: flex;
+      margin-top: 2.5em;
+      background-image:url(../img/Figure1.jpg);
+      height:50vh;
+      background-position: center;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position:relative;
+    }
 }

@@ -79,10 +79,10 @@ button {
   align-items: center;
 }
 .nav_menu_list .nav_menu_item {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
 }
 .nav_menu_item .nav_menu_link {
-  font-size: 16.5px;
+  font-size: 16px;
   line-height: 27px;
   color: var(--link-color);
   text-transform: capitalize;
@@ -117,8 +117,16 @@ button {
   flex: 0.5;
   padding-right: 7.5em;
 }
-.flex-row-2{
+.flex-row-2 {
   flex: 1;
+  font-size: 18px;
+  line-height: 1.5;
+  text-justify:inter-word;
+  text-align: justify;
+}
+.message-of-hope{
+  flex: 1;
+  font-style: italic;
   font-size: 18px;
   line-height: 1.5;
   text-justify:inter-word;
@@ -146,7 +154,7 @@ button {
   height: 65%;
   width: 80%;
   margin: auto;
-  margin-top: 2.5em;
+  margin-top: 1.5em;
 }
 
 @media (max-width: 768px) { /*breakpoint*/

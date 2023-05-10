@@ -116,21 +116,36 @@ document.getElementsByClassName("attr-value")[0].textContent =
 xmlDoc.getElementsByTagName("title_of_project")[projNo].childNodes[0].nodeValue;
 
 document.getElementsByClassName("attr-value")[1].textContent =
-xmlDoc.getElementsByTagName("credits_for_project")[projNo].childNodes[0].nodeValue;
+xmlDoc.getElementsByTagName("keywords_of_project")[projNo].childNodes[0].nodeValue;
 
 document.getElementsByClassName("attr-value")[2].textContent =
-xmlDoc.getElementsByTagName("year_of_project")[projNo].childNodes[0].nodeValue;
+xmlDoc.getElementsByTagName("country_of_contribution")[projNo].childNodes[0].nodeValue;
 
 document.getElementsByClassName("attr-value")[3].textContent =
 xmlDoc.getElementsByTagName("primary_SDG")[projNo].childNodes[0].nodeValue;
-
+ 
 document.getElementsByClassName("attr-value")[4].textContent =
-xmlDoc.getElementsByTagName("duration_of_solution")[projNo].childNodes[0].nodeValue;
+xmlDoc.getElementsByTagName("credits_for_project")[projNo].childNodes[0].nodeValue;
 
-document.getElementsByClassName("attr-value")[5].textContent =
-xmlDoc.getElementsByTagName("country_of_contribution")[projNo].childNodes[0].nodeValue;
+var Affiliation = xmlDoc.getElementsByTagName("Affiliation")[projNo].childNodes[0].nodeValue
+Affiliation = Affiliation.replaceAll('_', ' ')
+document.getElementsByClassName("attr-value")[5].textContent = Affiliation;
 
-document.getElementsByClassName("flex-row-2")[0].textContent =
+document.getElementsByClassName("attr-value")[6].textContent =
+xmlDoc.getElementsByTagName("year_of_project")[projNo].childNodes[0].nodeValue;
+
+var category_of_contribution = xmlDoc.getElementsByTagName("category_of_contribution")[projNo].childNodes[0].nodeValue
+category_of_contribution = category_of_contribution.replaceAll('_', ' ');
+document.getElementsByClassName("attr-value")[7].textContent = category_of_contribution;
+
+var climate_hazard = xmlDoc.getElementsByTagName("climate_hazard")[projNo].childNodes[0].nodeValue;
+climate_hazard = climate_hazard.replaceAll(" ",", ");
+document.getElementsByClassName("attr-value")[8].textContent = climate_hazard
+
+document.getElementsByClassName("message-of-hope")[0].innerHTML =
+"'"+xmlDoc.getElementsByTagName("synopsis_of_project")[projNo].childNodes[0].nodeValue+"'";
+
+document.getElementsByClassName("project-description")[0].innerHTML =
 xmlDoc.getElementsByTagName("description_of_project")[projNo].childNodes[0].nodeValue;
 
 

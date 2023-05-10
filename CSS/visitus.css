@@ -1,4 +1,5 @@
 /* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
+
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 /* ==== ROOT RESET ==== */
@@ -18,11 +19,12 @@
 :root {
   --primary-color: #97a999;
   --link-color: #97a999;
-  --btn-hover-color: #97a999;
+  --btn-hover-color: #2b50c7;
   --lg-heading: #161c2d;
   --text-content: #869ab8;
   --fixed-header-height: 4.5rem;
 }
+
 /* ==== RESET HTML ==== */
 body {
   width: 100%;
@@ -35,6 +37,7 @@ ul li {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 button {
   background-color: transparent;
@@ -42,6 +45,8 @@ button {
   outline: none;
   cursor: pointer;
 }
+
+
   
 /* ==== CONTAINER ==== */
 .container {
@@ -104,57 +109,91 @@ button {
 .show {
   right: 3% !important;
 }
-
-
-    /* ====  PROJECT DESCRIPTION ==== */  
-.flex-row-container {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5em auto;
+.wrapper {
+  width: 100%;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
-.flex-row-1{
-  flex: 0.5;
-  padding-right: 7.5em;
-}
-.flex-row-2{
-  flex: 1;
-  font-size: 18px;
-  line-height: 1.5;
-  text-justify:inter-word;
-  text-align: justify;
+.wrapper-icons {
+  width: 100%;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.attr{
-  padding-bottom: 20px;
+.grid-cols-2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.grid-item-1 {
+  padding-top: 2.5rem;
+  padding-left: 1.5rem;
+}
+.grid-item-1-right {
+  padding-right: 1.5rem;
+}
+.main-heading {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
+}
+.main-heading span {
+  color: var(--primary-color);
+}
+.info-text {
+  margin-top: 2.5rem;
+  font-size: 19px;
+  line-height: 28px;
+  color: #334157;
 }
 
-.attr-name{
-  font-size: 12px;
-  text-transform:uppercase;
-  color:grey;
-  padding-bottom: 2.5px;
+.info-text-only {
+  padding-top:2.5em;
+  font-size: 19px;
+  line-height: 28px;
+  color: #334157;
 }
-
-.attr-value{
-  font-size: 14px;
-  padding-bottom: 10px;
-  text-transform: capitalize;
+.grid-item-2 {
+  width: 100%;
+  height: 100%;
 }
-
-#map {
-  height: 65%;
-  width: 80%;
-  margin: auto;
-  margin-top: 2.5em;
+.team_img_wrapper {
+  width: 500px;
+  max-width: 100%;
+  height: 440px;
 }
-
-@media (max-width: 768px) { /*breakpoint*/
+.team_img_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.grid-cols-3 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 2rem;
+  padding: 1rem;
+}
+.grid-col-item {
+  height: 100%;
+}
+@media screen and (min-width: 1040px) {
   .container {
-    flex-direction: column;
+    width: 1040px;
+    margin: 0 auto;
   }
 }
-    
+
+
+
 /* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
 @media screen and (min-width: 768px) {
   .toggle_btn {
@@ -163,7 +202,6 @@ button {
   .nav_menu {
     display: block;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -205,13 +243,14 @@ button {
   .close_btn:hover {
     color: #000;
   }
-  .flex-row-container > * {
-    flex-basis: 100%;
+  .wrapper {
+    padding: 0 0.7rem;
   }
-  .flex-row-2{
-    font-size: 15px;
-    line-height: 1.5;
-    text-align: justify;
-  }
+  
 }
 
+@media screen and (max-width: 991px) {
+  .wrapper {
+    padding-top: 2rem;
+  }
+}

@@ -1,4 +1,5 @@
 /* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
+
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 /* ==== ROOT RESET ==== */
@@ -18,11 +19,12 @@
 :root {
   --primary-color: #97a999;
   --link-color: #97a999;
-  --btn-hover-color: #97a999;
+  --btn-hover-color: #2b50c7;
   --lg-heading: #161c2d;
   --text-content: #869ab8;
   --fixed-header-height: 4.5rem;
 }
+
 /* ==== RESET HTML ==== */
 body {
   width: 100%;
@@ -35,6 +37,7 @@ ul li {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 button {
   background-color: transparent;
@@ -42,6 +45,8 @@ button {
   outline: none;
   cursor: pointer;
 }
+
+
   
 /* ==== CONTAINER ==== */
 .container {
@@ -105,56 +110,85 @@ button {
   right: 3% !important;
 }
 
-
-    /* ====  PROJECT DESCRIPTION ==== */  
-.flex-row-container {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5em auto;
-}
-.flex-row-1{
-  flex: 0.5;
-  padding-right: 7.5em;
-}
-.flex-row-2{
-  flex: 1;
-  font-size: 18px;
-  line-height: 1.5;
-  text-justify:inter-word;
-  text-align: justify;
+/* ====  EVENT-MODULES  ==== */
+.page-container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+.main-heading {
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 1.75;
+    font-size: 20px;
+    font-weight: 750;
+    font-style: italic;
+    padding-top: 2em;
 }
 
-.attr{
-  padding-bottom: 20px;
+.main-content{
+    padding-top: 2.5em;
+    font-size: 18px;
+    line-height: 1.5;
+    text-justify:inter-word;
+    text-align: justify;
 }
 
-.attr-name{
-  font-size: 12px;
-  text-transform:uppercase;
-  color:grey;
-  padding-bottom: 2.5px;
+.main-content a{
+    font-style: italic;
+    color:var(--link-color);
 }
 
-.attr-value{
-  font-size: 14px;
-  padding-bottom: 10px;
-  text-transform: capitalize;
-}
-
-#map {
-  height: 65%;
-  width: 80%;
-  margin: auto;
-  margin-top: 2.5em;
-}
-
-@media (max-width: 768px) { /*breakpoint*/
+.btn_wrapper {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .btn {
+    width: 250px;
+    height: 80px;
+    background-color: var(--primary-color);
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    transition: 0.4s;
+  }
+  .btn:hover {
+    transform: translateY(-3px);
+    background-color: var(--btn-hover-color);
+  }
+  .view_more_btn {
+    width: 250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #fff;
+    font-weight: 500;
+    margin-right: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+  }
+  .view_more_btn i {
+    margin-left: 0.7rem;
+  }
+  .view_more_btn:hover {
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+  }
+  
+@media screen and (min-width: 1040px) {
   .container {
-    flex-direction: column;
+    width: 1040px;
+    margin: 0 auto;
   }
 }
-    
+
+
+
 /* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
 @media screen and (min-width: 768px) {
   .toggle_btn {
@@ -163,7 +197,6 @@ button {
   .nav_menu {
     display: block;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -205,13 +238,14 @@ button {
   .close_btn:hover {
     color: #000;
   }
-  .flex-row-container > * {
-    flex-basis: 100%;
+  .wrapper {
+    padding: 0 0.7rem;
   }
-  .flex-row-2{
-    font-size: 15px;
-    line-height: 1.5;
-    text-align: justify;
-  }
+  
 }
 
+@media screen and (max-width: 991px) {
+  .wrapper {
+    padding-top: 2rem;
+  }
+}
