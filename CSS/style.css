@@ -73,10 +73,20 @@ button {
   justify-content: space-between;
 }
 /* ==== LOGO ==== */
-.logo h2 {
-  font-size: 28px;
+.logo img{
+  width: 42px;
+  height: 38px;
+  display: inline-block;
+}
+
+.logo p{
+  display: inline-block;
+  line-height: 1.25;
+  padding-left: 1em;
+  font-size: 8.5px;
   color: var(--primary-color);
 }
+
 /* ====  NAV-MENU  ==== */
 .nav_menu_list {
   display: flex;
@@ -179,14 +189,13 @@ button {
 }
 
 .info-text-only {
-  padding-top:2.5em;
   font-size: 19px;
   line-height: 28px;
   color: #334157;
 }
 
 .btn_wrapper {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
   display: flex;
   width: 100%;
 }

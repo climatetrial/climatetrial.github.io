@@ -70,10 +70,20 @@ button {
   justify-content: space-between;
 }
 /* ==== LOGO ==== */
-.logo h2 {
-  font-size: 28px;
+.logo img{
+  width: 35px;
+  height: 38px;
+  display: inline-block;
+}
+
+.logo p{
+  display: inline-block;
+  line-height: 1.25;
+  padding-left: 1em;
+  font-size: 8px;
   color: var(--primary-color);
 }
+
 /* ====  NAV-MENU  ==== */
 .nav_menu_list {
   display: flex;
