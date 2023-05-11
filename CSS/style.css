@@ -194,6 +194,15 @@ button {
   color: #334157;
 }
 
+.info-text-credits {
+  margin-top: 6rem;
+  padding-left: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #334157;
+}
+
 .btn_wrapper {
   margin-top: 2.5rem;
   display: flex;
@@ -423,6 +432,10 @@ button {
     padding: 0.7rem;
   }
 
+  .info-text-credits {
+    font-size: 16px;
+    text-align: center;
+  } 
   .btn_wrapper {
     width: 100%;
     display: flex;

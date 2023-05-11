@@ -148,6 +148,14 @@ document.getElementsByClassName("message-of-hope")[0].innerHTML =
 document.getElementsByClassName("project-description")[0].innerHTML =
 xmlDoc.getElementsByTagName("description_of_project")[projNo].childNodes[0].nodeValue;
 
+var extra_links = xmlDoc.getElementsByTagName("extra_links")[projNo].childNodes[0].nodeValue
+
+if (extra_links == "NA"){
+   //pass
+} else{
+  document.getElementsByClassName("extra-links")[0].innerHTML = '<a href="'+extra_links+'">'+extra_links+'</a>';
+}
+
 
 // ==== MAP JS POP UP ==== //
 var currentLat = xmlDoc.getElementsByTagName("lat")[projNo].childNodes[0].nodeValue;

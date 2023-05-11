@@ -137,12 +137,20 @@ button {
 .message-of-hope{
   flex: 1;
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   text-justify:inter-word;
   text-align: justify;
 }
-
+.extra-links a{
+  flex: 1;
+  color:var(--primary-color);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  text-justify:inter-word;
+  text-align: justify;
+}
 .attr{
   padding-bottom: 20px;
 }
