@@ -132,6 +132,12 @@ button {
     background-size:contain;
     position:relative;
   }
+
+.hero-bg-media *{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
   /* ==== CONTAINER ==== */
 .container {
   width: 100%;
@@ -433,8 +439,10 @@ button {
   }
 
   .info-text-credits {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
+    padding: 0;
+    margin: 0%;
   } 
   .btn_wrapper {
     width: 100%;
