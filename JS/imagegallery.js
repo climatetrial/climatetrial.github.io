@@ -124,10 +124,12 @@ window.onload = function() {
 
     var yearOfProj = document.createElement("p");
     yearOfProj.innerHTML = xmlDoc.getElementsByTagName("year_of_project")[i].childNodes[0].nodeValue;
+    var country_of_contribution = xmlDoc.getElementsByTagName("country_of_contribution")[i].childNodes[0].nodeValue
+    country_of_contribution = country_of_contribution.replaceAll('_', ' ');
     var desc = document.createElement("p");
     desc.innerHTML = 
     xmlDoc.getElementsByTagName("city_of_contribution")[i].childNodes[0].nodeValue+", "+
-    xmlDoc.getElementsByTagName("country_of_contribution")[i].childNodes[0].nodeValue;
+    country_of_contribution;
     
     contentDiv.append(desc);
     contentDiv.append(yearOfProj);

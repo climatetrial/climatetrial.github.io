@@ -118,8 +118,10 @@ xmlDoc.getElementsByTagName("title_of_project")[projNo].childNodes[0].nodeValue;
 document.getElementsByClassName("attr-value")[1].textContent =
 xmlDoc.getElementsByTagName("keywords_of_project")[projNo].childNodes[0].nodeValue;
 
-document.getElementsByClassName("attr-value")[2].textContent =
-xmlDoc.getElementsByTagName("country_of_contribution")[projNo].childNodes[0].nodeValue;
+var country_of_contribution = xmlDoc.getElementsByTagName("country_of_contribution")[projNo].childNodes[0].nodeValue;
+country_of_contribution = country_of_contribution.replaceAll("_"," ");
+var city_of_contribution = xmlDoc.getElementsByTagName("city_of_contribution")[projNo].childNodes[0].nodeValue;
+document.getElementsByClassName("attr-value")[2].textContent = city_of_contribution + ", " + country_of_contribution;
 
 document.getElementsByClassName("attr-value")[3].textContent =
 xmlDoc.getElementsByTagName("primary_SDG")[projNo].childNodes[0].nodeValue;
