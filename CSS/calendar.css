@@ -161,6 +161,9 @@ button {
   .event-details {
     padding-left: 14px;
   }
+  .event-details-text {
+    padding-left: 0px;
+  }
   
   .event-title {
     line-height: 1.5;
