@@ -177,7 +177,7 @@ Berenice Simao, Teacher of Sao Carlos do Jamari (Riverside community)
 Marcio Santana de Lima, Resident of Sao Carlos do Jamari (Riverside community)
 Ana Sarah Lofti, NAPRAs ex-member
 Sandila Alves, Poet from Sao Carlos do Jamari (Riverside community)</credits_for_project>
-		<year_of_project>2023</year_of_project>
+		<year_of_project>2022</year_of_project>
 		<description_of_project>The NAPRA (Nucleus of Support for the Riverside Population of the Amazon) is a private non-profit organization founded in 1993 with the mission of contributing to the conservation of the Amazon Forest and valuing the way of life and culture of the populations that inhabit it.
 Our goal is to develop projects together with communities and promote engagement between volunteers and riverside communities, strengthen social participation, visibility of the territory and also contribute to the learning process of students and professionals working in the Amazonian context.
 We brought some short testimonies about the work of the institution and the riverside way of life, trying to resume the experience that we share with the communities, to show to all the world the difference in their way of life, consumption and what is it like to be in their territory. We sustain that sometimes the solution for climate change is to look into the traditional peoples who live together with nature.</description_of_project>
@@ -1701,7 +1701,7 @@ constructed of sustainable building materials, preserving the local know-how of 
 		<primary_SDG>Sustainable Cities and Communities</primary_SDG>
 		<secondary_SDG> No Poverty,  Good Health and Well-being,       Reduced Inequality,       </secondary_SDG>
 		<country_of_contribution>Nigeria</country_of_contribution>
-		<city_of_contribution>Gidajen Laka is a low-cost culture-sensitive approach towards sustainable communal housing for a proposed community located 1.7km away from Gidan Yar fara village in Sokoto State, Nigeria. This settlement is located in the north eastern outskirts of Sokoto State, along the proposed Great Green Wall belt.</city_of_contribution>
+		<city_of_contribution>Sokoto State</city_of_contribution>
 		<lat>13.591703</lat>
 		<long>5.905876</long>
 		<climate_hazard>climatological</climate_hazard>
@@ -1709,5 +1709,179 @@ constructed of sustainable building materials, preserving the local know-how of 
 		<no_of_images>1</no_of_images>
 		<category_of_contribution>solutions_to_adapt_to_climate_</category_of_contribution>
 		<extra_links>https://www.uia-architectes.org/en/competition/great-green-wall-single-stage-student-ideas-competition/</extra_links>
+	</project>
+	<project ID="240278897">
+		<Name>Plam</Name>
+		<Surname>Creative Studio</Surname>
+		<Affiliation>other</Affiliation>
+		<City_of_Institution>Ferrara</City_of_Institution>
+		<country_001>Italy</country_001>
+		<title_of_project>Tuboo</title_of_project>
+		<credits_for_project>Arianna Montinaro
+Andrea Miljevic
+Andrea Pradella
+Luca Pradella</credits_for_project>
+		<year_of_project>2023</year_of_project>
+		<description_of_project>TuBOO is a project designed by Plam Creative Studio on the occasion of the temporary exhibition for Climate Wunderkammer, an open source collective archive.
+Both typology of seats, made out of pvc water pipes, are designed on the inspiration of Japanese Bamboos bending traditional technique.
+TuBoo is meant as a case history to be included in the Climate Wunderkammers archive: a design approach that opens a reflection, addressing the themes of "de-contextualize" and "re-interpret". How can the ancient technique meet the current technology and trigger re-thinking processes?
+The seats are made out of orange pvc water pipes, normally used in the building field. The pipes are heated and folded in new shapes. The connection between modules is made through a standard steel tensioner.
+TuBoo minimizes the type of materials used to respond to the function that the object must perform.
+Thanks to the lightness and the resistance of pvc, the seats are easy to assemble, disassemble and transport; they can be quickly recomposed in the exhibition room and also can be used in outdoor space.</description_of_project>
+		<synopsis_of_project>How can the ancient technique meet the current technology and trigger re-thinking processes?</synopsis_of_project>
+		<keywords_of_project>RETHINKING, DECONTEXTUALIZED, REINTERPRET, PVC, BAMBOO</keywords_of_project>
+		<duration_of_solution>Temporary (Short term)</duration_of_solution>
+		<primary_SDG>Responsible Consumption and Production</primary_SDG>
+		<secondary_SDG>           Sustainable Cities and Communities,      </secondary_SDG>
+		<country_of_contribution>Italy</country_of_contribution>
+		<city_of_contribution>FERRARA</city_of_contribution>
+		<lat>44.831351</lat>
+		<long>11.61941</long>
+		<climate_hazard>Meteorological</climate_hazard>
+		<project_ID>240278897</project_ID>
+		<no_of_images>3</no_of_images>
+		<category_of_contribution>Solutions to adapt to climate change; </category_of_contribution>
+		<extra_links>https:www.plamstudio.eutuboo</extra_links>
+	</project>
+	<project ID="242185682">
+		<Name>Yueqi</Name>
+		<Surname>Zhang</Surname>
+		<Affiliation>TU Delft, The Netherlands</Affiliation>
+		<City_of_Institution>Delft</City_of_Institution>
+		<country_001>Netherlands</country_001>
+		<title_of_project>Through lake and swamp-An adaptive wetland production transformation</title_of_project>
+		<credits_for_project>Yueqi Zhang,  Technische Universiteit Delft, Msc Architecture,Urbanism and Landscape Archtecture(track Urbaism)</credits_for_project>
+		<year_of_project>2023</year_of_project>
+		<description_of_project>This project focuses on the sustainable development of Anxin County, situated in the Xiongan New Area of China. The aim is to create a harmonious balance between economic growth and ecological preservation, considering the regions unique characteristics, such as the Baiyangdian wetland and the surrounding rural landscape. Taking the local wetland productive system as a starting point, the project explores the possibilities of the local agricultural landscape to be adapted to the rapid urbanization process as well as providing a climate-resilient solution for the hydrological crisis.
+
+A strategic map has been formulated through a comprehensive analysis and evaluation of scenario building. This map emphasizes the integration of local industries, namely reed cultivation, fishery and other primary industries, and ecological preservation. By promoting the sustainability of the local industry, a more coordinated network will be built to provide enough job opportunities to residents and protect the ecological sensitivity of the wetland at the same time. The goal is to enhance the ecological and social resilience of the area and establish a sustainable development model that can be replicated in the North China Plain area.</description_of_project>
+		<synopsis_of_project>Preservation and adaptation together pave the way for a resilient future amidst climate change.</synopsis_of_project>
+		<keywords_of_project>Climate resilience, industrial transformation, agricultural landscape, regional planning, megaregion intergration, wetland ecology</keywords_of_project>
+		<duration_of_solution>Long-term (decades)</duration_of_solution>
+		<primary_SDG>Sustainable Cities and Communities</primary_SDG>
+		<secondary_SDG>        Decent Work and Economic Growth, Industry, Innovation and Infrastructure,   Responsible Consumption and Production,     </secondary_SDG>
+		<country_of_contribution>China</country_of_contribution>
+		<city_of_contribution>Baoding</city_of_contribution>
+		<lat>38.92981</lat>
+		<long>115.927545</long>
+		<climate_hazard>Climatological Geophysical</climate_hazard>
+		<project_ID>242185682</project_ID>
+		<no_of_images>3</no_of_images>
+		<category_of_contribution>Solutions to adapt to climate change; </category_of_contribution>
+		<extra_links>NA</extra_links>
+	</project>
+	<project ID="246296038">
+		<Name>Giulia</Name>
+		<Surname>Castellazzi</Surname>
+		<Affiliation>other</Affiliation>
+		<City_of_Institution>Milano</City_of_Institution>
+		<country_001>Italy</country_001>
+		<title_of_project>SLOPE INSTABILITIES DRIVEN BY GLACIER MELTING PROCESSES: a GIS-based approach for Landslide Risk Assessment in the Alpine landscapes of Valle dAosta</title_of_project>
+		<credits_for_project>Giulia Castellazzi, Author
+Mattia Previtali, Supervisor (Politecnico di Milano)</credits_for_project>
+		<year_of_project>2021</year_of_project>
+		<description_of_project>The identification of dangerous areas is crucial for developing environmental risk reduction strategies. While various methods exist for assessing and computing individual sub-components, there is a lack of applying the entire risk assessment procedure over large areas to directly inform the design of regional and municipal risk mitigation policies. This research focuses on landslides and gravitational movements resulting from rapid glacier melting in the Valle dAosta region in Italy, with the aim of providing a tool that can support spatial planning in response to climate change in Alpine environments, landscapes that can be extremely fragile, but also very dangerous at the same time. By employing a GIS-based and multi-scalar approach, the study estimated the risk by defining hazard indexes that consider various aspects. It draws upon knowledge from diverse disciplinary fields and establishes an initial regional framework. The assessment was then deepened for the Lys River Valley, where hazardous areas were mapped, and buildings were classified based on their hazard scores. Furthermore, the study selected four survey areas representing different landscape typologies in Valle dAosta where a detailed vulnerability analysis was conducted, resulting in an estimation of potential damage and overall risk associated with slope instability events at the local scale.</description_of_project>
+		<synopsis_of_project>Alpine landscapes possess a delicate nature, characterized by both fragility and inherent danger: the identification of hazard areas is a crucial step to develop environmental risk reduction strategies, increasing the resilience of our territories.</synopsis_of_project>
+		<keywords_of_project>Alpine Landscape, Slope Instability, Glacier Melting, Risk Assessment, GIS methodology</keywords_of_project>
+		<duration_of_solution>Long-term (decades)</duration_of_solution>
+		<primary_SDG>Climate Action</primary_SDG>
+		<secondary_SDG>   Good Health and Well-being,        Sustainable Cities and Communities,      Partnerships to achieve the Goal,</secondary_SDG>
+		<country_of_contribution>Italy</country_of_contribution>
+		<city_of_contribution>Valle dAosta</city_of_contribution>
+		<lat>45.828159</lat>
+		<long>7.824986</long>
+		<climate_hazard>Geophysical</climate_hazard>
+		<project_ID>246296038</project_ID>
+		<no_of_images>3</no_of_images>
+		<category_of_contribution>Narrative of climate change - observing and reporting the impact of a changing climate</category_of_contribution>
+		<extra_links>NA</extra_links>
+	</project>
+	<project ID="248209098">
+		<Name>Malena</Name>
+		<Surname>Bertotti</Surname>
+		<Affiliation>Politecnico Di Milano, Italy</Affiliation>
+		<City_of_Institution>Piacenza</City_of_Institution>
+		<country_001>Italy</country_001>
+		<title_of_project>The butterfly effect</title_of_project>
+		<credits_for_project>Bertotti, Malena - Politecnico di Milano 
+Dong, Wenjing - Politecnico di Milano
+Lahor, Elif - Politecnico di Milano 
+Rodriguez, Sandra - Politecnico di Milano 
+Valarezo, Isabella - Politecnico di Milano 
+Zauron, Maryam - Politecnico di Milano</credits_for_project>
+		<year_of_project>2023</year_of_project>
+		<description_of_project>In chaos theory, the butterfly effect is the sensitive dependence on initial conditions in which a small change in one state of a deterministic nonlinear system can result in large differences in a later state. The butterfly effect main goal is to regenerate the urban environment with a "low profile" approach, with a particular focus on restoring ecosystem quality and the connection between urbanity and nature. Not only from the perspective of humans, also considering the wildlife as main characters of this project. In addition to the interventions themselves, we aim to promote a culture of care and respect for nature among the urban community. We envision a city where environmental health is a top priority and all inhabitants can enjoy a healthier, safer environment that positively impacts their quality of life and well-being.</description_of_project>
+		<synopsis_of_project>It is never to late to start appreciating and protecting our nature resources.</synopsis_of_project>
+		<keywords_of_project>observatory, environmental, climate change, biodiversity</keywords_of_project>
+		<duration_of_solution>Long-term (decades)</duration_of_solution>
+		<primary_SDG>Sustainable Cities and Communities</primary_SDG>
+		<secondary_SDG>       Clean Water and Sanitation,           </secondary_SDG>
+		<country_of_contribution>Spain</country_of_contribution>
+		<city_of_contribution>Barcelona</city_of_contribution>
+		<lat>41.351169</lat>
+		<long>2.093889</long>
+		<climate_hazard>Climatological Hydrological</climate_hazard>
+		<project_ID>248209098</project_ID>
+		<no_of_images>3</no_of_images>
+		<category_of_contribution>Solutions to adapt to climate change; </category_of_contribution>
+		<extra_links>NA</extra_links>
+	</project>
+	<project ID="249905015">
+		<Name>Lux</Name>
+		<Surname>Meteora</Surname>
+		<Affiliation>other</Affiliation>
+		<City_of_Institution>Madrid</City_of_Institution>
+		<country_001>Spain</country_001>
+		<title_of_project>A FIERY EXCHANGE</title_of_project>
+		<credits_for_project>Lux Meteora</credits_for_project>
+		<year_of_project>2023</year_of_project>
+		<description_of_project>Fire is destructive, yet it can be regenerative as well. A Fiery Exchange is a NbS webcomic that tackles the problematic surrounding fire and fire policies.</description_of_project>
+		<synopsis_of_project>What if fire were used for good instead of just being seen as a destructive force of nature?</synopsis_of_project>
+		<keywords_of_project>Wildfire, prescribed fire, preventive fire, fire policy, fire suppression</keywords_of_project>
+		<duration_of_solution>Long-term (decades) Permanent (centuries)</duration_of_solution>
+		<primary_SDG>Climate Action</primary_SDG>
+		<secondary_SDG> No Poverty,  Good Health and Well-being,            Life on Land,  </secondary_SDG>
+		<country_of_contribution>Spain</country_of_contribution>
+		<city_of_contribution>Sierra de la Culebra</city_of_contribution>
+		<lat>41.905664</lat>
+		<long>-6.330467</long>
+		<climate_hazard>Meteorological Climatological Biological</climate_hazard>
+		<project_ID>249905015</project_ID>
+		<no_of_images>3</no_of_images>
+		<category_of_contribution>Narrative of climate change - observing and reporting the impact of a changing climate</category_of_contribution>
+		<extra_links>https:nbscomics.com202306072023-a-fiery-exchange</extra_links>
+	</project>
+	<project ID="258366973">
+		<Name>Nabil</Name>
+		<Surname>Mohareb</Surname>
+		<Affiliation>other</Affiliation>
+		<City_of_Institution>Cairo</City_of_Institution>
+		<country_001>Egypt</country_001>
+		<title_of_project>Reuse of ancient towers</title_of_project>
+		<credits_for_project>Mariam Maged, Future University</credits_for_project>
+		<year_of_project>2023</year_of_project>
+		<description_of_project>This project introduces a visionary approach to revitalizing Southern Italian coastal watchtowers, amalgamating historical restoration with contemporary functionality. The strategy encompasses two pivotal facets: "Collective Revival" and "Individual Performance."
+
+The "Collective Revival" entails a captivating seasonal contest uniting the watchtowers via a dynamic treasure hunt trail, emanating from distinct towers and imparting historical narratives. This immersive journey not only highlights each towers uniqueness but also forges a cohesive coastal identity as participants traverse sea and shore routes. Reestablishing visual and physical communication channels connecting participating towers.
+
+Simultaneously, the "Individual Performance" aspect focuses on enhancing the distinctive attributes of each tower. Elements encompass designated shaded seating, elevated platforms for panoramic views, projection screens for nocturnal activities, and cafe facilities. Exemplified by the Torre Rinalda case, an innovative wooden ramp enriches both accessibility and aesthetics.
+
+The design maintains historical integrity through steel frames outlining original silhouettes, complete with light and smoke pipes that echo historical functionality. Utilizing sustainable materials like naturally recycled wood underscores the eco-conscious approach. Interactive shading devices (wings) provide adaptable configurations for diverse weather and activities.
+
+This visionary concept rejuvenates watchtowers, harmonizing history, innovation, and sustainability along the Southern Italian coast, forging a resilient and vibrant coastal community.</description_of_project>
+		<synopsis_of_project>Revitalizing disused heritage structures offers a sustainable path forward amidst the pressing climate crisis.</synopsis_of_project>
+		<keywords_of_project>Italian watching towers, reuse of old buildings, reuse towers</keywords_of_project>
+		<duration_of_solution>Temporary (Short term)</duration_of_solution>
+		<primary_SDG>Sustainable Cities and Communities</primary_SDG>
+		<secondary_SDG>                 Partnerships to achieve the Goal,</secondary_SDG>
+		<country_of_contribution>Italy</country_of_contribution>
+		<city_of_contribution>Lecce</city_of_contribution>
+		<lat>40.396599</lat>
+		<long>18.292891</long>
+		<climate_hazard>Hydrological Geophysical</climate_hazard>
+		<project_ID>258366973</project_ID>
+		<no_of_images>3</no_of_images>
+		<category_of_contribution>Solutions to adapt to climate change; </category_of_contribution>
+		<extra_links>NA</extra_links>
 	</project>
 </data-set>
